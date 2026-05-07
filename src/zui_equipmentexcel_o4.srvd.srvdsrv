@@ -1,0 +1,11 @@
+@EndUserText: {
+  label: 'Service Definition for ZC_EQUIPMENTEXCEL000'
+}
+@ObjectModel: {
+  leadingEntity: {
+    name: 'ZC_EQUIPMENTEXCEL000'
+  }
+}
+define service ZUI_EQUIPMENTEXCEL_O4 provider contracts odata_v4_ui {
+  expose ZC_EQUIPMENTEXCEL000;
+}

@@ -1,0 +1,930 @@
+@Metadata.layer: #CORE
+
+ @UI.headerInfo: { title: { type: #STANDARD, value: 'Equipment' },
+                  description: { type: #STANDARD, value: 'Equipment' },
+                  typeName: 'Equipments',
+                  typeNamePlural: 'Equipments' }
+                  
+@UI.presentationVariant: [ { requestAtLeast: [
+    'Equipment',
+    'VehicleStatForEqui',
+    'InsuranceStartDate',
+    'InsuranceEndDate',
+    'FileNumber',
+    'UserAllocatedPersn',
+    'LiftNo',
+    'CaseNo',
+    'AirConditionNo',
+    'SequenceNo',
+    'AirconditioningTL',
+    'AirCondtionCurr',
+    'LiftTL',
+    'Liftcurr',
+    'HGSBalance',
+    'HGSCurr',
+    'Region',
+    'L1No',
+    'K1No',
+    'EngineNo',
+    'DeviceName',
+    'Color',
+    'Brand',
+    'Logo',
+    'MaintenanceInterval',
+    'ATPEndDate',
+    'Separator',
+    'Lift',
+    'VehicleDocType',
+    'PledgeInfo',
+    'ModelYear',
+    'VehicleType',
+    'InsurancePlcyComp',
+    'TrafficPlcyComp',
+    'PrAccidentPlcyCmp',
+    'InsuranceAgency',
+    'TrafficStartDate',
+    'TrafficEndDate',
+    'TrafficInsuranceAg',
+    'PersAccidentStartD',
+    'PersAccidentEndDat',
+    'PersAccidentInsAgc',
+    'CaseTL',
+    'CaseCurr',
+    'InspectionStart',
+    'InspectionEnd',
+    'HGSNo',
+    'RegistrationDate',
+    'IssuedPlace',
+    'PayloadCapacity',
+    'DocumentSerialNo',
+    'ChassisNo',
+    'Category',
+    'TensionBelt',
+    'Stepne',
+    'TachographClbDate',
+    'ExhaustInspEndDate',
+     'PosternDoor',
+    'AirCondition',
+    'PledgeCompany',
+    'PalletNumber',
+    'Company',
+    'VehicleBodyType',
+    'Model',
+    'VehicleClass'
+ ] } ]
+ 
+
+annotate view ZC_EQUIPMENTEXCEL000 with
+{
+
+
+  @UI.facet: [ {
+    label: 'General Information', 
+    id: 'GeneralInfo', 
+    purpose: #STANDARD, 
+    position: 10 , 
+    type: #IDENTIFICATION_REFERENCE
+  } ]
+  @UI.identification: [ {
+    position: 10 
+  } ]
+  @UI.lineItem: [ {
+    position: 10 
+  } ]
+  @UI.selectionField: [ {
+    position: 10 
+  } ]
+  @Consumption.valueHelpDefinition: [{ entity:{ name: 'I_EquipmentStdVH' , element: 'Equipment' } }]
+  Equipment;
+   @UI.identification: [ {
+    position: 15 
+  } ]
+  @UI.lineItem: [ {
+    position: 15 
+  } ]
+  @UI.selectionField: [ {
+    position: 15 
+  } ]
+  @Consumption.valueHelpDefinition: [{ entity:{ name: 'I_EquipmentText' , element: 'EquipmentName' } }]
+  EquipmentText;
+  
+  @UI.identification: [ {
+    position: 20 
+  } ]
+  @UI.lineItem: [ {
+    position: 20 
+  } ]
+//  @UI.selectionField: [ {
+//    position: 20 
+//  } ]
+  VehicleStatForEqui;
+  
+  @UI.identification: [ {
+    position: 30 
+  } ]
+  @UI.lineItem: [ {
+    position: 30 
+  } ]
+//  @UI.selectionField: [ {
+//    position: 30 
+//  } ]
+  InsuranceStartDate;
+  
+  @UI.identification: [ {
+    position: 40 
+  } ]
+  @UI.lineItem: [ {
+    position: 40 
+  } ]
+//  @UI.selectionField: [ {
+//    position: 40 
+//  } ]
+  InsuranceEndDate;
+  
+  @UI.identification: [ {
+    position: 50 
+  } ]
+  @UI.lineItem: [ {
+    position: 50 
+  } ]
+//  @UI.selectionField: [ {
+//    position: 50 
+//  } ]
+  FileNumber;
+  
+  @UI.identification: [ {
+    position: 60 
+  } ]
+  @UI.lineItem: [ {
+    position: 60 
+  } ]
+//  @UI.selectionField: [ {
+//    position: 60 
+//  } ]
+  UserAllocatedPersn;
+  
+  @UI.identification: [ {
+    position: 70 
+  } ]
+  @UI.lineItem: [ {
+    position: 70 
+  } ]
+//  @UI.selectionField: [ {
+//    position: 70 
+//  } ]
+  LiftNo;
+  @UI.identification: [ {
+    position: 80 
+  } ]
+  @UI.lineItem: [ {
+    position: 80 
+  } ]
+//  @UI.selectionField: [ {
+//    position: 80 
+//  } ]
+  CaseNo;
+  
+  @UI.identification: [ {
+    position: 90 
+  } ]
+  @UI.lineItem: [ {
+    position: 90 
+  } ]
+//  @UI.selectionField: [ {
+//    position: 90 
+//  } ]
+  AirConditionNo;
+  
+  @UI.identification: [ {
+    position: 100 
+  } ]
+  @UI.lineItem: [ {
+    position: 100 
+  } ]
+//  @UI.selectionField: [ {
+//    position: 100 
+//  } ]
+  SequenceNo;
+  
+  @UI.identification: [ {
+    position: 110 
+  } ]
+  @UI.lineItem: [ {
+    position: 110 
+  } ]
+//  @UI.selectionField: [ {
+//    position: 110 
+//  } ]
+  AirconditioningTL;
+  
+  @UI.identification: [ {
+    position: 120 
+  } ]
+  @UI.lineItem: [ {
+    position: 120 
+  } ]
+//  @UI.selectionField: [ {
+//    position: 120 
+//  } ]
+  LiftTL;
+  
+  @UI.identification: [ {
+    position: 130 
+  } ]
+  @UI.lineItem: [ {
+    position: 130 
+  } ]
+//  @UI.selectionField: [ {
+//    position: 130 
+//  } ]
+  HGSBalance;
+  
+  @UI.identification: [ {
+    position: 140 
+  } ]
+  @UI.lineItem: [ {
+    position: 140 
+  } ]
+//  @UI.selectionField: [ {
+//    position: 140 
+//  } ]
+  Region;
+  
+  @UI.identification: [ {
+    position: 150 
+  } ]
+  @UI.lineItem: [ {
+    position: 150 
+  } ]
+//  @UI.selectionField: [ {
+//    position: 150 
+//  } ]
+  L1No;
+  
+  @UI.identification: [ {
+    position: 160 
+  } ]
+  @UI.lineItem: [ {
+    position: 160 
+  } ]
+//  @UI.selectionField: [ {
+//    position: 160 
+//  } ]
+  K1No;
+  
+  @UI.identification: [ {
+    position: 170 
+  } ]
+  @UI.lineItem: [ {
+    position: 170 
+  } ]
+//  @UI.selectionField: [ {
+//    position: 170 
+//  } ]
+  EngineNo;
+  
+  @UI.identification: [ {
+    position: 180 
+  } ]
+  @UI.lineItem: [ {
+    position: 180 
+  } ]
+//  @UI.selectionField: [ {
+//    position: 180 
+//  } ]
+  DeviceName;
+  
+  @UI.identification: [ {
+    position: 190 
+  } ]
+  @UI.lineItem: [ {
+    position: 190 
+  } ]
+//  @UI.selectionField: [ {
+//    position: 190 
+//  } ]
+  Color;
+  
+  @UI.identification: [ {
+    position: 200 
+  } ]
+  @UI.lineItem: [ {
+    position: 200 
+  } ]
+//  @UI.selectionField: [ {
+//    position: 200 
+//  } ]
+  Brand;
+  
+  @UI.identification: [ {
+    position: 210 
+  } ]
+  @UI.lineItem: [ {
+    position: 210 
+  } ]
+//  @UI.selectionField: [ {
+//    position: 210 
+//  } ]
+  Logo;
+  
+  @UI.identification: [ {
+    position: 220 
+  } ]
+  @UI.lineItem: [ {
+    position: 220 
+  } ]
+//  @UI.selectionField: [ {
+//    position: 220 
+//  } ]
+  MaintenanceInterval;
+  
+  @UI.identification: [ {
+    position: 230 
+  } ]
+  @UI.lineItem: [ {
+    position: 230 
+  } ]
+//  @UI.selectionField: [ {
+//    position: 230 
+//  } ]
+  ATPEndDate;
+  
+  @UI.identification: [ {
+    position: 240 
+  } ]
+  @UI.lineItem: [ {
+    position: 240 
+  } ]
+//  @UI.selectionField: [ {
+//    position: 240 
+//  } ]
+  Separator;
+  
+  @UI.identification: [ {
+    position: 250 
+  } ]
+  @UI.lineItem: [ {
+    position: 250 
+  } ]
+//  @UI.selectionField: [ {
+//    position: 250 
+//  } ]
+  Lift;
+  
+  @UI.identification: [ {
+    position: 260 
+  } ]
+  @UI.lineItem: [ {
+    position: 260 
+  } ]
+//  @UI.selectionField: [ {
+//    position: 260 
+//  } ]
+  VehicleDocType;
+  
+  @UI.identification: [ {
+    position: 270 
+  } ]
+  @UI.lineItem: [ {
+    position: 270 
+  } ]
+//  @UI.selectionField: [ {
+//    position: 270 
+//  } ]
+  PledgeInfo;
+  
+  @UI.identification: [ {
+    position: 280 
+  } ]
+  @UI.lineItem: [ {
+    position: 280 
+  } ]
+//  @UI.selectionField: [ {
+//    position: 280 
+//  } ]
+  ModelYear;
+  
+  @UI.identification: [ {
+    position: 290 
+  } ]
+  @UI.lineItem: [ {
+    position: 290 
+  } ]
+//  @UI.selectionField: [ {
+//    position: 290 
+//  } ]
+  VehicleType;
+  
+  @UI.identification: [ {
+    position: 300 
+  } ]
+  @UI.lineItem: [ {
+    position: 300 
+  } ]
+//  @UI.selectionField: [ {
+//    position: 300 
+//  } ]
+  InsurancePlcyComp;
+  
+  @UI.identification: [ {
+    position: 310 
+  } ]
+  @UI.lineItem: [ {
+    position: 310 
+  } ]
+//  @UI.selectionField: [ {
+//    position: 310 
+//  } ]
+  InsuranceAgency;
+  
+  @UI.identification: [ {
+    position: 320 
+  } ]
+  @UI.lineItem: [ {
+    position: 320 
+  } ]
+//  @UI.selectionField: [ {
+//    position: 320 
+//  } ]
+  TrafficPlcyComp;
+  
+  @UI.identification: [ {
+    position: 330 
+  } ]
+  @UI.lineItem: [ {
+    position: 330 
+  } ]
+//  @UI.selectionField: [ {
+//    position: 330 
+//  } ]
+  TrafficStartDate;
+  
+  @UI.identification: [ {
+    position: 340 
+  } ]
+  @UI.lineItem: [ {
+    position: 340 
+  } ]
+//  @UI.selectionField: [ {
+//    position: 340 
+//  } ]
+  TrafficEndDate;
+  
+  @UI.identification: [ {
+    position: 350 
+  } ]
+  @UI.lineItem: [ {
+    position: 350 
+  } ]
+//  @UI.selectionField: [ {
+//    position: 350 
+//  } ]
+  TrafficInsuranceAg;
+  
+  @UI.identification: [ {
+    position: 360 
+  } ]
+  @UI.lineItem: [ {
+    position: 360 
+  } ]
+//  @UI.selectionField: [ {
+//    position: 360 
+//  } ]
+  PrAccidentPlcyCmp;
+  
+  @UI.identification: [ {
+    position: 370 
+  } ]
+  @UI.lineItem: [ {
+    position: 370 
+  } ]
+//  @UI.selectionField: [ {
+//    position: 370 
+//  } ]
+  PersAccidentStartD;
+  
+  @UI.identification: [ {
+    position: 380 
+  } ]
+  @UI.lineItem: [ {
+    position: 380 
+  } ]
+//  @UI.selectionField: [ {
+//    position: 380 
+//  } ]
+  PersAccidentEndDat;
+  
+  @UI.identification: [ {
+    position: 390 
+  } ]
+  @UI.lineItem: [ {
+    position: 390 
+  } ]
+//  @UI.selectionField: [ {
+//    position: 390 
+//  } ]
+  PersAccidentInsAgc;
+  
+  @UI.identification: [ {
+    position: 400 
+  } ]
+  @UI.lineItem: [ {
+    position: 400 
+  } ]
+//  @UI.selectionField: [ {
+//    position: 400 
+//  } ]
+  CaseTL;
+  
+  @UI.identification: [ {
+    position: 410 
+  } ]
+  @UI.lineItem: [ {
+    position: 410 
+  } ]
+//  @UI.selectionField: [ {
+//    position: 410 
+//  } ]
+  InspectionStart;
+  
+  @UI.identification: [ {
+    position: 420 
+  } ]
+  @UI.lineItem: [ {
+    position: 420 
+  } ]
+//  @UI.selectionField: [ {
+//    position: 420 
+//  } ]
+  InspectionEnd;
+  
+  @UI.identification: [ {
+    position: 430 
+  } ]
+  @UI.lineItem: [ {
+    position: 430 
+  } ]
+//  @UI.selectionField: [ {
+//    position: 430 
+//  } ]
+  HGSNo;
+  
+  @UI.identification: [ {
+    position: 440 
+  } ]
+  @UI.lineItem: [ {
+    position: 440 
+  } ]
+//  @UI.selectionField: [ {
+//    position: 440 
+//  } ]
+  RegistrationDate;
+  
+  @UI.identification: [ {
+    position: 450 
+  } ]
+  @UI.lineItem: [ {
+    position: 450 
+  } ]
+//  @UI.selectionField: [ {
+//    position: 450 
+//  } ]
+  IssuedPlace;
+  
+  @UI.identification: [ {
+    position: 460 
+  } ]
+  @UI.lineItem: [ {
+    position: 460 
+  } ]
+//  @UI.selectionField: [ {
+//    position: 460 
+//  } ]
+  PayloadCapacity;
+  
+  @UI.identification: [ {
+    position: 470 
+  } ]
+  @UI.lineItem: [ {
+    position: 470 
+  } ]
+//  @UI.selectionField: [ {
+//    position: 470 
+//  } ]
+  DocumentSerialNo;
+  
+  @UI.identification: [ {
+    position: 480 
+  } ]
+  @UI.lineItem: [ {
+    position: 480 
+  } ]
+//  @UI.selectionField: [ {
+//    position: 480 
+//  } ]
+  ChassisNo;
+  
+  @UI.identification: [ {
+    position: 490 
+  } ]
+  @UI.lineItem: [ {
+    position: 490 
+  } ]
+//  @UI.selectionField: [ {
+//    position: 490 
+//  } ]
+  Category;
+  
+  @UI.identification: [ {
+    position: 500 
+  } ]
+  @UI.lineItem: [ {
+    position: 500 
+  } ]
+//  @UI.selectionField: [ {
+//    position: 500 
+//  } ]
+  TensionBelt;
+  
+  @UI.identification: [ {
+    position: 510 
+  } ]
+  @UI.lineItem: [ {
+    position: 510 
+  } ]
+//  @UI.selectionField: [ {
+//    position: 510 
+//  } ]
+  Stepne;
+  
+  @UI.identification: [ {
+    position: 520 
+  } ]
+  @UI.lineItem: [ {
+    position: 520 
+  } ]
+//  @UI.selectionField: [ {
+//    position: 520 
+//  } ]
+  TachographClbDate;
+  
+  @UI.identification: [ {
+    position: 530 
+  } ]
+  @UI.lineItem: [ {
+    position: 530 
+  } ]
+//  @UI.selectionField: [ {
+//    position: 530 
+//  } ]
+  ExhaustInspEndDate;
+  
+  @UI.identification: [ {
+    position: 540 
+  } ]
+  @UI.lineItem: [ {
+    position: 540 
+  } ]
+//  @UI.selectionField: [ {
+//    position: 540 
+//  } ]
+  PosternDoor;
+  
+  @UI.identification: [ {
+    position: 550 
+  } ]
+  @UI.lineItem: [ {
+    position: 550 
+  } ]
+//  @UI.selectionField: [ {
+//    position: 550 
+//  } ]
+  AirCondition;
+  
+  @UI.identification: [ {
+    position: 560 
+  } ]
+  @UI.lineItem: [ {
+    position: 560 
+  } ]
+//  @UI.selectionField: [ {
+//    position: 560 
+//  } ]
+  PledgeCompany;
+  
+  @UI.identification: [ {
+    position: 570 
+  } ]
+  @UI.lineItem: [ {
+    position: 570 
+  } ]
+//  @UI.selectionField: [ {
+//    position: 570 
+//  } ]
+  PalletNumber;
+  
+  @UI.identification: [ {
+    position: 580 
+  } ]
+  @UI.lineItem: [ {
+    position: 580 
+  } ]
+//  @UI.selectionField: [ {
+//    position: 580 
+//  } ]
+  Company;
+  
+  @UI.identification: [ {
+    position: 590 
+  } ]
+  @UI.lineItem: [ {
+    position: 590 
+  } ]
+//  @UI.selectionField: [ {
+//    position: 590 
+//  } ]
+  VehicleBodyType;
+  @UI.identification: [ {
+    position: 595 
+  } ]
+  @UI.lineItem: [ {
+    position: 595
+  } ]
+  Model;
+  @UI.identification: [ {
+    position: 596 
+  } ]
+  @UI.lineItem: [ {
+    position: 596
+  } ]
+  StandingOrder;
+  @UI.identification: [ {
+    position: 598 
+  } ]
+  @UI.lineItem: [ {
+    position: 598
+  } ]
+  VehicleClass;
+  @UI.identification: [ {
+    position: 600 
+  } ]
+  @UI.lineItem: [ {
+    position: 600 
+  } ]
+//  @UI.selectionField: [ {
+//    position: 600 
+//  } ]
+  MaintenancePlannerGroup;
+  @UI.identification: [ {
+    position: 610 
+  } ]
+  @UI.lineItem: [ {
+    position: 610 
+  } ]
+//  @UI.selectionField: [ {
+//    position: 610 
+//  } ]
+  MaintenancePlanningPlant;
+  @UI.identification: [ {
+    position: 620 
+  } ]
+  @UI.lineItem: [ {
+    position: 620 
+  } ]
+//  @UI.selectionField: [ {
+//    position: 620 
+//  } ]
+  MainWorkCenter;
+  @UI.identification: [ {
+    position: 630 
+  } ]
+  @UI.lineItem: [ {
+    position: 630 
+  } ]
+//  @UI.selectionField: [ {
+//    position: 630 
+//  } ]
+  MainWorkCenterPlant;
+  @UI.identification: [ {
+    position: 640 
+  } ]
+  @UI.lineItem: [ {
+    position: 640 
+  } ]
+//  @UI.selectionField: [ {
+//    position: 640 
+//  } ]
+  CatalogProfile;
+  @UI.identification: [ {
+    position: 650 
+  } ]
+  @UI.lineItem: [ {
+    position: 650 
+  } ]
+//  @UI.selectionField: [ {
+//    position: 650 
+//  } ]
+  CompanyCode;
+  @UI.identification: [ {
+    position: 660 
+  } ]
+  @UI.lineItem: [ {
+    position: 660 
+  } ]
+//  @UI.selectionField: [ {
+//    position: 660 
+//  } ]
+  ControllingArea;
+  @UI.identification: [ {
+    position: 670 
+  } ]
+  @UI.lineItem: [ {
+    position: 670 
+  } ]
+//  @UI.selectionField: [ {
+//    position: 670 
+//  } ]
+  BusinessArea;
+  @UI.identification: [ {
+    position: 680 
+  } ]
+  @UI.lineItem: [ {
+    position: 680 
+  } ]
+//  @UI.selectionField: [ {
+//    position: 680 
+//  } ]
+  CostCenter;
+  @UI.identification: [ {
+    position: 690 
+  } ]
+  @UI.lineItem: [ {
+    position: 690 
+  } ]
+//  @UI.selectionField: [ {
+//    position: 690 
+//  } ]
+  WBSElementExternalID;
+  @UI.identification: [ {
+    position: 700 
+  } ]
+  @UI.lineItem: [ {
+    position: 700 
+  } ]
+//  @UI.selectionField: [ {
+//    position: 700 
+//  } ]
+  SettlementOrder;
+  @UI.identification: [ {
+    position: 710 
+  } ]
+  @UI.lineItem: [ {
+    position: 710 
+  } ]
+//  @UI.selectionField: [ {
+//    position: 710 
+//  } ]
+ MasterFixedAsset;
+ @UI.identification: [ {
+    position: 720 
+  } ]
+   @UI.lineItem: [ {
+    position: 720 
+  } ]
+//  @UI.selectionField: [ {
+//    position: 720 
+//  } ]
+// @UI.lineItem: [{ type: #FOR_ACTION , dataAction: 'ExcelUpload', label: 'Excel Upload' }]
+ FixedAsset;
+  @UI.identification: [ {
+    position: 720 
+  } ]
+   @UI.lineItem: [ {
+    position: 720 
+  } ]
+  @UI.hidden: true
+  @UI.lineItem: [{ type: #FOR_ACTION , dataAction: 'ExcelUpload', label: 'Excel Upload' }]
+  SeperatorDesc;
+    @EndUserText.label: '_Equipmentp'
+  @UI.identification: [ {
+    position: 730 , 
+    label: '_Equipmentp'
+  } ]
+//  @UI.lineItem: [ {
+//    position: 730 , 
+//    label: '_Equipmentp' 
+//  } ]
+  _Equipmentp;
+  
+  @EndUserText.label: '_BaseEntity'
+  @UI.identification: [ {
+    position: 740 , 
+    label: '_BaseEntity'
+  } ]
+//  @UI.lineItem: [ {
+//    position: 740 , 
+//    label: '_BaseEntity'
+//  } ]
+
+  _BaseEntity;
+}

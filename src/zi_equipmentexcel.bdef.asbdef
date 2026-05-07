@@ -1,0 +1,24 @@
+managed with additional save
+implementation in class zbp_i_equipmentexcel unique;
+strict ( 2 );
+
+define behavior for ZI_EquipmentExcel //alias <alias_name>
+with unmanaged save
+lock master
+authorization master ( global )
+//etag master <field_name>
+{
+  //  create ( authorization : global );
+  //  update;
+  //  delete;
+  field ( readonly ) Equipment;
+
+  static action ExcelUpload deep parameter ZPM_AE_UPLOADEXCEL result [1..*] $self;
+
+  //  side effects
+  //  {
+  //    action ExcelUpload affects $self;
+  //    field Equipment affects $self;
+  //  }
+
+}

@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_MSAG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <T100A>
+    <ARBGB>ZPM_EXCELUPL_COCKPIT</ARBGB>
+    <MASTERLANG>E</MASTERLANG>
+    <STEXT>Message Class Excel Upload Cockpit</STEXT>
+   </T100A>
+   <T100>
+    <T100>
+     <SPRSL>T</SPRSL>
+     <ARBGB>ZPM_EXCELUPL_COCKPIT</ARBGB>
+     <MSGNR>000</MSGNR>
+     <TEXT>&amp;1 &amp;2 &amp;3 &amp;4</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>T</SPRSL>
+     <ARBGB>ZPM_EXCELUPL_COCKPIT</ARBGB>
+     <MSGNR>001</MSGNR>
+     <TEXT>Excel Yükleme başarılı.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>T</SPRSL>
+     <ARBGB>ZPM_EXCELUPL_COCKPIT</ARBGB>
+     <MSGNR>002</MSGNR>
+     <TEXT>Numara olmayan değerler &amp;1 alanına girilmemelidir.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>T</SPRSL>
+     <ARBGB>ZPM_EXCELUPL_COCKPIT</ARBGB>
+     <MSGNR>003</MSGNR>
+     <TEXT>&amp;1 no&apos;lu ekipman için satırdaki tüm tarihleri kontrol ediniz. &amp;2</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>T</SPRSL>
+     <ARBGB>ZPM_EXCELUPL_COCKPIT</ARBGB>
+     <MSGNR>004</MSGNR>
+     <TEXT>&amp;1 değerinde nokta virgül hatası vardır. Tutar Formatı : 2.754,15 olmalı.</TEXT>
+    </T100>
+   </T100>
+   <I18N_LANGS>
+    <LANGU>E</LANGU>
+   </I18N_LANGS>
+   <T100T>
+    <T100T>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZPM_EXCELUPL_COCKPIT</ARBGB>
+     <STEXT>Message Class Excel Upload Cockpit</STEXT>
+    </T100T>
+   </T100T>
+   <T100_TEXTS>
+    <item>
+     <SPRSL>E</SPRSL>
+     <MSGNR>000</MSGNR>
+     <TEXT>&amp;1 &amp;2 &amp;3 &amp;4</TEXT>
+    </item>
+    <item>
+     <SPRSL>E</SPRSL>
+     <MSGNR>001</MSGNR>
+     <TEXT>Excel Upload is successful.</TEXT>
+    </item>
+    <item>
+     <SPRSL>E</SPRSL>
+     <MSGNR>002</MSGNR>
+     <TEXT>Non-numeric values ​​cannot be entered in the &amp;1 field.</TEXT>
+    </item>
+    <item>
+     <SPRSL>E</SPRSL>
+     <MSGNR>003</MSGNR>
+     <TEXT>&amp;1 no&apos;lu ekipman için satırdaki tüm tarihleri kontrol ediniz. &amp;2</TEXT>
+    </item>
+    <item>
+     <SPRSL>E</SPRSL>
+     <MSGNR>004</MSGNR>
+     <TEXT>&amp;1 değerinde nokta virgül hatası vardır. Tutar Formatı : 2.754,15 olmalı.</TEXT>
+    </item>
+   </T100_TEXTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>
